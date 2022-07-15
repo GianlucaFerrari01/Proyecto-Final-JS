@@ -1,29 +1,29 @@
 sistema()
-const cuotas = ""
-const precioFinal=""
-const valorPr=""
-
+const cuotasDisp = " 3 , 6 , 12 , 15 , 24"
   function sistema()
   {
     let valorPr = Number (prompt("Ingresa el valor de tu producto:"))
-    let cuotas = Number (prompt(`Ingresa la cantidad de cuotas:
+    let valorCuotas = Number (prompt(`Ingresa la cantidad de cuotas:
                                             3
                                             6
                                             12
                                             15
                                             24`))
   }
-
-  if (cuotas === 3) 
+cuotas()
+ function cuotas()
+ {
+    if (valCuotas === 3) 
   {
-    precioCuota = valorPr/cuotas
+    precioCuota = valPr/3
     alert("El precio por cuota queda en:", precioCuota )
+    
   }
-  else if(cuotas===`6`)
+  else if(cuotas===6)
   {
     console.log(`El precio por cuota le queda en:" , ${valorPr/cuotas}` )
   }
-  else if(cuotas===`12`)
+  else if(cuotas===12)
   {
     console.log("El precio por cuota le queda en:" , precioCuota )
   }
@@ -40,6 +40,8 @@ const valorPr=""
   else {
     alert("Operación Invalida")
   }
+ }
+  
     
 
 
