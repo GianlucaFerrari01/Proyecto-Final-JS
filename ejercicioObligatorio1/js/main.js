@@ -1,48 +1,45 @@
-alert ("Bienvenido al sistema de asistencia al empleado")
-alert ("Para realizar una verificación de su sueldo siga las intrucciones:")
+sistema()
+const cuotas = ""
+const precioFinal=""
+const valorPr=""
 
-let categoria = prompt(`Ingrese su categoría:
-                                INGRESANTE
-                                OPERARIO CALIFICADO
-                                MEDIO OFICIAL
-                                OPERARIO ESPECIALIZADO
-                                OPERARIO ESPDO MÚLTIPLE
-                                OFICIAL
-                                OFICIAL MÚLTIPLE`);
-let antiguedad = Number(prompt("Ingrese su antiguedad:"))
-let diast = Number (prompt("Días trabajados:"))
-let hext = Number (prompt("Horas extras trabajadas:"))
-const operacionSueldo=""
-const hxd = 8.80;
-const hnt = hxd * diast;
-const hex = (categoria + (categoria/2)) 
-const hrexf = hext * hex
-calculadora(operacionSueldo)
-function calculadora(operacionSueldo) {
-    switch (operacionSueldo) {
-        case "INGRESANTE":
-            sueldoBruto= hnt + antiguedad + hrexf;
-            sueldoFinal= sueldoBruto - 19,5% 
-            console.log("Su sueldo final sería:",sueldoFinal)
-            break;/*
-        case "OPERARIO CALIFICADO":
-            restar(numero1, numero2)
-            break;
-        case "MEDIO OFICIAL":
-            dividir(numero1, numero2)
-            break;
-        case "OPERARIO ESPECIALIZADO":
-            multiplicar(numero1, numero2)
-            break;
-        case "OPERARIO ESPDO MÚLTIPLE":
-            multiplicar(numero1, numero2)
-            break;
-        case "OFICIAL":
-            
-            break;
-        case "OFICIAL MÚLTIPLE":
-            
-            break;*/
-    }
-}
+  function sistema()
+  {
+    let valorPr = Number (prompt("Ingresa el valor de tu producto:"))
+    let cuotas = Number (prompt(`Ingresa la cantidad de cuotas:
+                                            3
+                                            6
+                                            12
+                                            15
+                                            24`))
+  }
+
+  if (cuotas === 3) 
+  {
+    precioCuota = valorPr/cuotas
+    alert("El precio por cuota queda en:", precioCuota )
+  }
+  else if(cuotas===`6`)
+  {
+    console.log(`El precio por cuota le queda en:" , ${valorPr/cuotas}` )
+  }
+  else if(cuotas===`12`)
+  {
+    console.log("El precio por cuota le queda en:" , precioCuota )
+  }
+  else if(cuotas===15)
+  {
+    precioCuota = valorPr / cuotas
+    console.log("El precio por cuota le queda en:" , precioCuota )
+  }
+  else if (cuotas===24) 
+  {
+    precioCuota = valorPr / cuotas
+    console.log("El precio por cuota le queda en:" , precioCuota )
+  }
+  else {
+    alert("Operación Invalida")
+  }
+    
+
 
