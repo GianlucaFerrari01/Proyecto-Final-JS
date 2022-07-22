@@ -13,7 +13,6 @@ function interfaz () {
     OFICIAL
     OFICIAL MÚLTIPLE`);
     
-    let antiguedad = Number(prompt("Ingrese su antiguedad:"))
     let diast = Number(prompt("Días trabajados:"))
     let hext = Number(prompt("Horas extras trabajadas:"))
     const hex = (categoria + (categoria / 2))
