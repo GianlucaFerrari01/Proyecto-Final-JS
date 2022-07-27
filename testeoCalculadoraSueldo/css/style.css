@@ -19,22 +19,31 @@ body {
 }
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top: 20px;
     list-style: none;
-    font-size: 30px;
+    font-size: 20px;
+    margin-right: 20px;
 }
 .navbar li a {
     text-decoration: none ;
+    color: black;
 }
 /*Fin Header*/
-.card {
-    z-index: 1;
-}
-.card h1 {
+.calc h2 {
+    color: white;
     text-align: center;
-    padding-right: 200px;
-    z-index: 2;
+    background-color: #243144;
+    height: 100px;
+    padding-top: 25px;
+    vertical-align: middle;
+}
+.calc form {
+    margin-left: 40%;
+}
+.row {
+    display: flex;
+    flex-direction: column;
 }
 
 .tabla .img-fluid img {
@@ -44,14 +53,21 @@ body {
     font-size: 30px;
     color: white;
     background-color: #243144;
-    height: 150px;
-    padding-top: 50px;
+    height: 100px;
+    padding-top: 25px;
 }
 .tabla .text-center h2 {
     text-align: center;
-    width: 1920px;
     vertical-align: middle;
 }
 .text-center{
     text-align: center;
+}
+.footer {
+    background-color:#243144 ;
+    height: 75px;
+}
+.refe {
+    text-align: center;
+    padding: 20px;
 }
