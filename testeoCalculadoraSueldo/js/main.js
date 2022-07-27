@@ -1,4 +1,4 @@
-alert("Bienvenido al sistema de asistencia al empleado")
+/*alert("Bienvenido al sistema de asistencia al empleado")
 alert("Para realizar una verificación de su sueldo siga las intrucciones:")
 
 interfaz()
