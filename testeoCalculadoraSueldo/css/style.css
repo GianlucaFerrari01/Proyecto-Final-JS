@@ -6,7 +6,6 @@
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    width: max-content;
     
 }
 .header {
@@ -23,13 +22,27 @@ body {
     padding-top: 20px;
     list-style: none;
     font-size: 20px;
-    margin-right: 20px;
 }
+.navbar-nav{
+    padding-left: 200px;
+    margin-left: auto;}
 .navbar li a {
     text-decoration: none ;
     color: black;
 }
 /*Fin Header*/
+/* Inicio Main card*/
+.card {
+    color: white;
+}
+.card-body {
+    background-color: #243144;
+}
+/* Fin Main card*/
+/*Seccion Calculadora*/
+.calc {
+    margin-bottom: 10px;
+}
 .calc h2 {
     color: white;
     text-align: center;
@@ -45,7 +58,8 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+/* Fin Seccion Calculadora*/
+/*Seccion Tabla de Sueldos*/
 .tabla .img-fluid img {
     width: 700px;
 }
@@ -63,6 +77,8 @@ body {
 .text-center{
     text-align: center;
 }
+/*Seccion Tabla de Sueldos*/
+/*Footer*/
 .footer {
     background-color:#243144 ;
     height: 75px;
@@ -71,3 +87,4 @@ body {
     text-align: center;
     padding: 20px;
 }
+/*Footer*/
