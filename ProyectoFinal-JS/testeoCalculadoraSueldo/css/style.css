@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.header {
+    position: sticky;
+    top: 0%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    list-style: none;
+    font-size: 20px;
+}
+.navbar-nav{
+    padding-left: 200px;
+    margin-left: auto;}
+.navbar li a {
+    text-decoration: none ;
+    color: black;
+}
+/*Fin Header*/
+/* Inicio Main card*/
+.card {
+    color: white;
+}
+.card-body {
+    background-color: #243144;
+}
+/* Fin Main card*/
+/*Seccion Calculadora*/
+.calc {
+    margin-bottom: 10px;
+}
+.calc h2 {
+    color: white;
+    text-align: center;
+    background-color: #243144;
+    height: 100px;
+    padding-top: 25px;
+    vertical-align: middle;
+}
+.calc form {
+    margin-left: 40%;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+}
+/* Fin Seccion Calculadora*/
+/*Seccion Tabla de Sueldos*/
+.tabla .img-fluid img {
+    width: 700px;
+}
+.tabla img {
+    padding: 20px;
+}
+.tabla h2 {
+    font-size: 30px;
+    color: white;
+    background-color: #243144;
+    height: 100px;
+    padding-top: 25px;
+}
+.tabla .text-center h2 {
+    text-align: center;
+    vertical-align: middle;
+}
+.text-center{
+    text-align: center;
+}
+/*Seccion Tabla de Sueldos*/
+/*Footer*/
+.footer {
+    background-color:#243144 ;
+    height: 75px;
+}
+.refe {
+    text-align: center;
+    padding: 20px;
+}
+/*Footer*/

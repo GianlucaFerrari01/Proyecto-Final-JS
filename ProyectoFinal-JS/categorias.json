@@ -1,0 +1,9 @@
+[
+    {"id":1, "name":"Ingresante", "sueldoxHora":434.82, "valorHoraExtra":652.23},
+    {"id":2, "name":"Operario Calificado", "sueldoxHora":470.79, "valorHoraExtra":706.185},
+    {"id":3, "name":"Medio Oficial", "sueldoxHora":508.53, "valorHoraExtra":762.79},
+    {"id":4, "name":"Operario Especializado", "sueldoxHora":543.60, "valorHoraExtra":815.4},
+    {"id":5, "name":"Operario Espdo Múltiple", "sueldoxHora":574.83, "valorHoraExtra":926.14},
+    {"id":6, "name":"Oficial", "sueldoxHora":602.41, "valorHoraExtra":903.61},
+    {"id":7, "name":"Oficial Múltiple", "sueldoxHora":647.80, "valorHoraExtra":971.7}
+]

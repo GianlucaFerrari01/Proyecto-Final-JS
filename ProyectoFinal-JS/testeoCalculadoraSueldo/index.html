@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#calculator">Calculadora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#referenciaSueldos">Sueldos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/fetch/noticias.html">Noticias</a>
+                        </li>
+                    </ul>
+
+                    <button id="darkMode"><img src="assets/apagado.png" class="text-center" alt=""></button>
+                    <button id="ligthMode"><img src="assets/prendido.png" class="text-center" alt=""></button>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="text-center"><a name="nosotros"></a>
+        <figure class="elementor-image-box-img"><img width="470" height="386"
+                src="assets/crecer.jpeg" class="attachment-full size-full"
+                alt="" loading="lazy"
+                sizes="(max-width: 470px) 100vw, 470px"></figure>
+    </div>
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">¿En que consiste nuestro sistema?</h5>
+            <p class="card-text">Nuestro sistema se dedica a la verificación de sus ingresos, proporcionandole una
+                seguridad extra, también el poder brindarle la posibilidad de llevar de forma más clara sus horas
+                trabajadas y poder trazar las horas necesarias para marcar sus objetivos.</p>
+        </div>
+    </div>
+    <!--Main Intro-->
+    <!--Form Calculadora-->
+    <section class="calc"><a name="calculator"></a>
+        <div class="text-center">
+            <h2>En la siguiente calculadora, se le va a solicitar unos datos con el fin correspondiente de realizar el
+                calculo de su sueldo.</h2>
+        </div>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Categoría</label>
+                <select id="lista" class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="" >Elegir...</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustomUsername" class="form-label">Días Trabajados</label>
+                <div class="input-group has-validation">
+                    <input type="number" class="form-control" id="horasNormales" value=""
+                        aria-describedby="inputGroupPrepend" required>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom03" class="form-label">Horas extras realizadas</label>
+                <input type="number" class="form-control" value="" id="horasExtras" required>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Sueldo Final:</label>
+                <input type="text" id="resultado" value="Ej: $40000" readonly>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" id="calcular" type="submit">Calcular</button>
+            </div>
+        </form>
+    </section>
+    <!--Form Calculadora-->
+    <!--Hoja de sueldos-->
+    <section class="tabla"><a name="referenciaSueldos"></a>
+        <div class="text-center">
+            <h2>Tabla de sueldos actuales</h2>
+        </div>
+        <div class="text-center">
+            <img src="assets/tablaActualizada.PNG" alt="">
+        </div>
+    </section>
+    <!--Hoja de sueldos-->
+    <!--Inicio de Footer-->
+    <footer class="footer">
+        <div class="refe">
+            <a name="footer"></a>
+            <li>
+                <a href="index.html">Inicio</a>
+                <a href="">Contactos</a>
+                <a href="https://www.stantec.com/es/copyright" target="_blank">Derechos y Copyright</a>
+            </li>
+        </div>
+    </footer>
+
+    <!--JAVASCRIPT-->
+    <script src="js/main.js"></script>
+    <script src="js/data/categorías.js"></script>
+    <script src="js/parametros.js"></script>
+    <script src="js/data/formulario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <!--JAVASCRIPT-->
+</body>
+
+</html>
